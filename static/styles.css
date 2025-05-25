@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.form-select {
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    transition: border-color 0.3s;
+}
+
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0b5ed7;
+    transform: scale(1.05);
+}
+
+.result-display {
+    padding: 30px;
+    background: rgba(13, 110, 253, 0.05);
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.result-icon {
+    animation: zoomIn 0.5s ease-out;
+}
+
+.confusion-matrix {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
